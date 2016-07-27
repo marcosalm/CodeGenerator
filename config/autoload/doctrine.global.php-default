@@ -1,0 +1,41 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Dcide
+ * Date: 11/05/2016
+ * Time: 17:09
+ */
+
+return [
+    'doctrine'=> [
+        'connection' =>[
+            'orm_default' =>[
+                'driver' => 'pdo_oci',
+                'host' => 'localhost',
+                'port' => '1521',
+                'user' => 'fmb_dcide',
+                'password' => '123456',
+                'dbname' => 'fmb_dcide',
+                'charset' => 'al32utf8',
+                'servicename' => "XE",
+            ]
+        ],
+        'orm' =>[
+            'proxy_dir'=>'data/cache/EntityProxy',
+            'proxy_namespace'=>'EntityProxy',
+            'auto_generate_proxy_classes' => false,
+            'underscore_naming_strategy'=> false
+        ],
+        'config' =>[
+            'entity_paths'=>[
+                'src\Business\DCompanies\Entity'
+            ]
+        ],
+        'cache'=> [
+            'redis'=>[
+                'host' => '192.168.0.35',
+                'port' => '6379',
+            ]
+        ]
+    ]
+];

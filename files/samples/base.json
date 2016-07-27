@@ -1,0 +1,38 @@
+{
+  "data": {
+    "psr4_root": "%MyProject%>src",
+    "folders": [
+      {
+        "name": "Config",
+        "type": "folder",
+        "location": "%MyProject%>config",
+        "offline": true
+      },
+      {
+        "name": "Data",
+        "type": "folder",
+        "location": "%MyProject%>data",
+        "offline": true
+      },
+      {
+        "name": "Source",
+        "type": "folder",
+        "location": "%MyProject%>src",
+        "offline": true
+      },
+      {
+        "name": "Public",
+        "type": "folder",
+        "location": "%MyProject%>public",
+        "offline": true
+      },
+      {
+        "name": "Tests",
+        "type": "folder",
+        "location": "%MyProject%>test",
+        "offline": true
+      }
+    ],
+    "sourceMap": true
+  }
+}
